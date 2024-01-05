@@ -2,18 +2,21 @@
   :root {
     --base-color: #fff;
     --primary-heading-color: #00308F;
+    --primary-background-color: #fff;
     --name-color: #fff;
     --tagline-color: #fff;
     --primary-text-color: #222629;
-    --secondary-heading-color: #003399;
-    --nav-text-color: #B9D9EB;
+    --secondary-heading-color: #fff;
+    --nav-text-color: #fff;
     --secondary-text-color: #474B4F;
     --link-color: #31708E;
-    --link-hover-color: #8FC1E3;
+    --link-hover-color: Orange;
     --border-color: #29648A;
     --primary-heading-font-size: 32px;
     --nav-bar-font-size: 22px;
     --secondary-heading-font-size: 24px;
+    --secondary-background-color: #00308F;
+    --tertiary-background-color: #B9D9EB;
     --small-screen: 768px;
     --medium-screen: 992px;
     --large-screen: 1200px;
@@ -68,35 +71,44 @@
   }
 
 /* Header & Navbar */
-  header {
-    padding: 20px;
-    font-family: "Open Sans", "Roboto Slab", "Lucida Grande", "Lucida Sans", Arial,
-      sans-serif;
-    background-color: var(--primary-heading-color);
-    color: var(--primary-heading-color);
-    display: flex;
+header {
+  padding: 20px;
+  background-color: var(--secondary-background-color);
+}
+
+nav {
+  background-color: var(--secondary-background-color);
+  color: var(--secondary-heading-color);
   }
-  
-  .navBar ul {
-    display: flex;
+
+  .custom-navbar ul {
     list-style: none;
     font-size: var(--nav-bar-font-size);
   }
   
-  .navBar a {
+  .custom-navbar a {
     text-decoration: none;
     color: var(--nav-text-color);
     transition: color 0.5s;
   }
   
-  .navBar a:hover {
+  .custom-navbar a:hover {
     color: var(--link-color);
   }
-  
-  .name {
-    color: var(--base-color);
+
+  .custom-navbar .navbar-brand {
+    color: #ff851b; /* Orange color for brand name */
   }
   
+  .custom-navbar .navbar-nav {
+    margin-left: auto; /* Move the navbar items to the right */
+  }
+
+  .custom-navbar .navbar-nav .nav-link {
+    color: #fff; /* White color for nav items */
+    padding: 0.5rem 1rem; /* Adjust padding for better spacing */
+  }
+
   /* Jumbotron */
   .myjumbo {
     min-width: 500px;
@@ -105,7 +117,7 @@
   }
   
   .myhero {
-    background-color: var(--nav-text-color) !important;
+    background-color: var(--tertiary-background-color) !important;
     height: 400px;
     display: flex;
     align-items: center;
@@ -140,22 +152,6 @@
     word-spacing: 1.5px;
     width: 70%;
     text-align: justify;
-  }
-  
-  #contact {
-    background-color: var(--primary-heading-color);
-  }
-  
-  .contact-item {
-    display:flex;
-    align-items:center;
-    margin: 10px 0;
-    font-size: 18px;
-  }
-  
-  .contact-item i {
-    margin-right:10px;
-    color: var(--base-color);
   }
   
   .page-section {
@@ -251,69 +247,46 @@
     justify-content: flex-end;
   }
   
-  .content {
-    /* background-color: white;
-    color: var(--secondary-text-color);
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    bottom: 0; */
+  /* Contact Me */
+  #contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
-  /* Contact Me */
-  .contactItem {
-    margin: 10px;
-    font-size: 20px;
-    word-spacing: 1.5px;
-    width: 100%;
-    text-align: center;
+  .contact-item {
+    font-size: 18px;
+    width: 80%;
     display: flex;
+    padding-top: 10px;
     justify-content: space-evenly;
-    align-items: center;
-    padding-top: 50px;
     flex-wrap: wrap;
   }
   
-  .contactItem a,
-  .footer a {
+  .contact-item a {
     text-decoration: none;
-    color: var(--nav-text-color);
+    color: var(--primary-heading-color);
     transition: color 0.5s;
   }
   
-  .contactItem a:hover,
-  .footer a:hover {
-    color: var(--link-color);
+  .contact-item a:hover {
+    color: var(--link-hover-color);
+  }  
+
+  /* Footer */
+footer {
+    background-color: var(--secondary-background-color);
+    color: var(--base-color);
   }
-  
-  #contact,
-  .footer {
-    background-color: var(--primary-heading-color);
-    color: var(--nav-text-color);
+
+  .custom-footer a {
+    color: white;
+    font-size: 20px;
   }
-  
-  .footer {
-    position: absolute;
-    text-align: center;
+
+  #copyright {
+    color: var(--base-color);
     align-items: center;
     width: 100%;
-    margin-top: 20px;
-  }
-  
-  .footer p {
-    color: var(--nav-text-color);
-  }
-  
-  .footer ul {
-    display: flex;
-    list-style: none;
-    font-size: var(--nav-bar-font-size);
-  }
-  
-  .resume {
-    padding-top: 8px;
-  }
-  
-  .copyright {
-    color: #fff !important;
+      text-align: center;
   }
