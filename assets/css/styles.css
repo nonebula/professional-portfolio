@@ -1,29 +1,47 @@
   /* site variables */
   :root {
-    --base-color: #fff;
-    --primary-heading-color: #00308F;
-    --primary-background-color: #fff;
-    --name-color: #fff;
-    --tagline-color: #fff;
-    --primary-text-color: #222629;
-    --secondary-heading-color: #fff;
-    --nav-text-color: #fff;
-    --secondary-text-color: #474B4F;
-    --link-color: #31708E;
-    --link-hover-color: Orange;
-    --border-color: #29648A;
+    --base-color: hsla(0, 0%, 100%, 1); /* White */
+    --primary-heading-color: hsla(218, 100%, 29%, 1); /* Dark Blue */
+    --primary-background-color: hsla(0, 0%, 100%, 1); /* White */
+    --name-color: hsla(0, 0%, 100%, 1); /* White */
+    --tagline-color: hsla(0, 0%, 100%, 1); /* White */
+    --primary-text-color: hsla(0, 0%, 13%, 1); /* Dark Gray */
+    --secondary-heading-color: hsla(0, 0%, 100%, 1); /* White */
+    --nav-text-color: hsla(0, 0%, 100%, 1); /* White */
+    --secondary-text-color: hsla(206, 5%, 30%, 1); /* Gray-Blue */
+    --link-color: hsla(202, 68%, 29%, 1); /* Dark Turquoise */
+    --link-hover-color: hsla(30, 100%, 50%, 1); /* Orange */
+    --border-color: hsla(200, 48%, 38%, 1); /* Dark Sky Blue */
     --primary-heading-font-size: 32px;
     --nav-bar-font-size: 22px;
     --secondary-heading-font-size: 24px;
-    --secondary-background-color: #00308F;
-    --tertiary-background-color: #B9D9EB;
+    --secondary-background-color: hsla(218, 100%, 29%, 1); /* Dark Blue */
+    --tertiary-background-color: hsla(205, 46%, 79%, 1); /* Light Sky Blue */
+    --tertiary-heading-color: hsla(218, 100%, 29%, 1); /* Dark Blue */
+    --tertiary-heading-font-size: 20px;
     --small-screen: 768px;
     --medium-screen: 992px;
     --large-screen: 1200px;
-    --primary-border-color: #00308f;
+    --primary-border-color: hsla(218, 100%, 29%, 1); /* Dark Blue */
   }
   
-  
+  /* Complementary Colors for Dark Blue (#00308F):
+
+Complement: hsla(38, 100%, 50%, 1) (Orange)
+Contrast: hsla(118, 100%, 50%, 1) (Green)
+Complementary Colors for Light Sky Blue (#B9D9EB):
+
+Complement: hsla(25, 100%, 50%, 1) (Orange-Red)
+Contrast: hsla(290, 100%, 50%, 1) (Purple)
+Complementary Colors for Dark Sky Blue (#29648A):
+
+Complement: hsla(15, 100%, 50%, 1) (Red-Orange)
+Contrast: hsla(140, 100%, 30%, 1) (Dark Green)
+Contrasting Color for Dark Gray (#222629):
+
+Contrast: hsla(40, 80%, 60%, 1) (Yellow) */
+
+
   /* header styles */
   h1 {
     padding: 10px;
@@ -50,8 +68,10 @@
   }
   
   h4 {
-    color: var(--secondary-heading-color);
-    font-size: var(--secondary-heading-font-size);
+    color: var(--tertiary-heading-color);
+    font-size: var(--tertiary-heading-font-size);
+    text-align: center;
+    text-decoration: underline;
     margin: 10px;
   }
   
@@ -174,13 +194,14 @@ nav {
 
   .flexItemSkill {
     width: 260px;
-    height: 200px;
+    height: 260px;
     margin: 10px;
     border: 1px solid black;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* Change to space-between for equal spacing */
+    object-fit: contain;
   }
   
   .flexContainer {
@@ -189,7 +210,42 @@ nav {
     justify-content: space-between;
   }
   
+  .content {
+    position: relative;
+  }
   
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.content:hover .overlay {
+  opacity: 1;
+}
+
+  .overlay-text {
+    color: white;
+    font-size: 16px;
+    position: absolute;
+    text-align: center;
+  }
+
+  .skill-logo {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width:100%;
+    max-height:100%;
+  }
+
   /* featured project section */  
   .flexPrimary {
     width: 1100px;
