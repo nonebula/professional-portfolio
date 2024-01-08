@@ -1,352 +1,643 @@
-  /* site variables */
-  :root {
-    --base-color: hsla(0, 0%, 100%, 1); /* White */
-    --primary-heading-color: hsla(218, 100%, 29%, 1); /* Dark Blue */
-    --primary-background-color: hsla(0, 0%, 100%, 1); /* White */
-    --name-color: hsla(0, 0%, 100%, 1); /* White */
-    --tagline-color: hsla(0, 0%, 100%, 1); /* White */
-    --primary-text-color: hsla(0, 0%, 13%, 1); /* Dark Gray */
-    --secondary-heading-color: hsla(0, 0%, 100%, 1); /* White */
-    --nav-text-color: hsla(0, 0%, 100%, 1); /* White */
-    --secondary-text-color: hsla(206, 5%, 30%, 1); /* Gray-Blue */
-    --link-color: hsla(202, 68%, 29%, 1); /* Dark Turquoise */
-    --link-hover-color: hsla(30, 100%, 50%, 1); /* Orange */
-    --border-color: hsla(200, 48%, 38%, 1); /* Dark Sky Blue */
-    --primary-heading-font-size: 32px;
-    --nav-bar-font-size: 22px;
-    --secondary-heading-font-size: 24px;
-    --secondary-background-color: hsla(218, 100%, 29%, 1); /* Dark Blue */
-    --tertiary-background-color: hsla(205, 46%, 79%, 1); /* Light Sky Blue */
-    --tertiary-heading-color: hsla(218, 100%, 29%, 1); /* Dark Blue */
-    --tertiary-heading-font-size: 20px;
-    --small-screen: 768px;
-    --medium-screen: 992px;
-    --large-screen: 1200px;
-    --primary-border-color: hsla(218, 100%, 29%, 1); /* Dark Blue */
-  }
-  
-  /* Complementary Colors for Dark Blue (#00308F):
+/* Site Variables */
+:root {
+  --base-color: hsla(0, 0%, 100%, 1); /* White */
 
-Complement: hsla(38, 100%, 50%, 1) (Orange)
-Contrast: hsla(118, 100%, 50%, 1) (Green)
-Complementary Colors for Light Sky Blue (#B9D9EB):
+  /* Navbar Formatting */
+  --nav-text-color: hsla(0, 0%, 100%, 1); /* White */
 
-Complement: hsla(25, 100%, 50%, 1) (Orange-Red)
-Contrast: hsla(290, 100%, 50%, 1) (Purple)
-Complementary Colors for Dark Sky Blue (#29648A):
+  --nav-bar-font-size: 22px;
 
-Complement: hsla(15, 100%, 50%, 1) (Red-Orange)
-Contrast: hsla(140, 100%, 30%, 1) (Dark Green)
-Contrasting Color for Dark Gray (#222629):
+  --tagline-color: hsla(0, 0%, 100%, 1);
 
-Contrast: hsla(40, 80%, 60%, 1) (Yellow) */
+  /* Link Colors */
+  --primary-link-hover-color: hsla(30, 100%, 50%, 1);
+  --secondary-link-hover-color: hsla(30, 100%, 50%, 0.8);
 
+  /* Font Sizes */
+  --primary-heading-font-size: 32px;
+  --secondary-heading-font-size: 22px;
+  --tertiary-heading-font-size: 18px;
+  --quaternary-heading-font-size: 14px;
 
-  /* header styles */
-  h1 {
-    padding: 10px;
-    color: var(--name-color);
-    font-size: var(--primary-heading-font-size);
-  }
-  
-  h2 {
-    padding: 10px;
-    text-align: right;
-    color: var(--tagline-color);
-    font-size: var(--primary-heading-font-size);
-    background-color: var(--secondary-heading-color);
-  }
-  
-  h3 {
-    padding: 10px;
-    margin: 25px;
-    color: var(--primary-heading-color);
-    font-size: var(--primary-heading-font-size);
-    width: 20%;
-    border-right: 3px solid var(--border-color);
-    margin-right: 10px;
-  }
-  
-  h4 {
-    color: var(--tertiary-heading-color);
-    font-size: var(--tertiary-heading-font-size);
-    text-align: center;
-    text-decoration: underline;
-    margin: 10px;
-  }
-  
-  h5 {
-    padding: 10px;
-    margin: 25px;
-    color: var(--base-color);
-    font-size: var(--primary-heading-font-size);
-    width: 20%;
-    border-right: 3px solid var(--base-color);
-    margin-right: 10px;
-  }
-  
-  h6 {
-    padding: 10px;
-    margin: 0;
-  }
+  --primary-text-font-size: 24px;
+  --secondary-text-font-size: 16px;
+  --tertiary-text-font-size: 14px;
+  --quaternary-text-font-size: 12px;
+
+  /* Text Colors */
+  --primary-heading-color: hsla(218, 100%, 29%, 1);
+  --secondary-heading-color: hsla(25, 100%, 50%, 1);
+  --tertiary-heading-color: hsla(218, 100%, 29%, 1);
+  --quaternary-heading-color: hsla(218, 100%, 29%, 1);
+
+  --primary-text-color: hsla(0, 0%, 13%, 1);
+  --secondary-text-color: hsla(206, 5%, 30%, 1);
+  --tertiary-text-color: hsla(205, 46%, 79%, 1);
+  --quaternary-text-color: hsla(205, 46%, 79%, 1);
+
+  /* Border Colors */
+  --primary-border-color: hsla(218, 100%, 29%, 0.8);
+  --secondary-border-color: hsla(218, 100%, 29%, 0.6);
+  --tertiary-border-color: hsla(205, 46%, 79%, 0.4);
+  --quaternary-border-color: hsla(205, 46%, 79%, 0.2);
+
+  /* Background Colors */
+  --primary-bg-color: hsla(218, 100%, 29%, 1);
+  --secondary-bg-color: hsla(218, 100%, 29%, 0.7);
+  --tertiary-bg-color: hsla(205, 46%, 79%, 1);
+  --quaternary-bg-color: hsla(205, 46%, 79%, 1);
+  --jumbo-bg-color: hsla(218, 100%, 29%, 0.4);
+
+  /* Overlay Variables */
+  --skill-overlay-heading-color: hsla(25, 100%, 50%, 1);
+  --featured-overlay-heading-color: hsla(25, 100%, 50%, 1);
+  --project-overlay-heading-color: hsla(25, 100%, 50%, 1);
+  --overlay-text-color: var(--base-color);
+  --skill-overlay-bg-color: hsla(218, 100%, 29%, 0.9);
+  --featured-overlay-bg-color: hsla(218, 100%, 29%, 0.9);
+  --project-overlay-bg-color: hsla(218, 100%, 29%, 0.9);
+
+  /* Button Variables */
+  --repo-btn-color: hsla(15, 100%, 50%, 1);
+  --repo-btn-hover-color: hsla(15, 100%, 50%, 0.75);
+  --page-btn-color: hsla(140, 100%, 30%, 1);
+  --page-btn-hover-color: hsla(140, 100%, 30%, 0.75);
+
+  /* Jumbotron Styling */
+  --jumbo-btn-color: hsla(15, 100%, 50%, 0.7);
+  --jumbo-btn-hover-color: hsla(15, 100%, 50%, 0.5);
+  --jumbo-btn-border-color: hsla(15, 100%, 50%, 0.6);
+  --jumbo-btn-hover-border: hsla(15, 100%, 50%, 0.4);
+}
+
+/* header styles */
+h1 {
+  padding: 10px;
+  color: var(--primary-heading-color);
+  font-size: var(--primary-heading-font-size);
+}
+
+h2 {
+  color: var(--primary-heading-color);
+  font-size: var(--primary-heading-font-size);
+  border-right: 3px solid var(--primary-border-color);
+  padding: 10px;
+  margin: 25px;
+  margin-right: 10px;
+  width: 20%;
+}
+
+h3 {
+  font-size: var(--secondary-heading-font-size);
+  color: var(--secondary-heading-color);
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h4 {
+  font-size: var(--secondary-heading-font-size);
+  color: var(--secondary-heading-color);
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline;
+}
+
+h5 {
+  font-size: var(--tertiary-heading-font-size);
+  color: var(--secondary-heading-color);
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h6 {
+  font-size: var(--quaternary-heading-font-size);
+  color: var(--secondary-heading-color);
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
 
 /* Header & Navbar */
 header {
   padding: 20px;
-  background-color: var(--secondary-background-color);
+  background-color: var(--primary-bg-color);
 }
 
 nav {
-  background-color: var(--secondary-background-color);
-  color: var(--secondary-heading-color);
-  }
-
-  .custom-navbar ul {
-    list-style: none;
-    font-size: var(--nav-bar-font-size);
-  }
-  
-  .custom-navbar a {
-    text-decoration: none;
-    color: var(--nav-text-color);
-    transition: color 0.5s;
-  }
-  
-  .custom-navbar a:hover {
-    color: var(--link-color);
-  }
-
-  .custom-navbar .navbar-brand {
-    color: #ff851b; /* Orange color for brand name */
-  }
-  
-  .custom-navbar .navbar-nav {
-    margin-left: auto; /* Move the navbar items to the right */
-  }
-
-  .custom-navbar .navbar-nav .nav-link {
-    color: #fff; /* White color for nav items */
-    padding: 0.5rem 1rem; /* Adjust padding for better spacing */
-  }
-
-  /* Jumbotron */
-  .myjumbo {
-    min-width: 500px;
-    max-height: 500px;
-    font-size: 24px;
-  }
-  
-  .myhero {
-    background-color: var(--tertiary-background-color) !important;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-wrap: wrap;
-  }
-  
-  .jumboButton {
-    background-color: var(--primary-heading-color);
-  }
-  
-  .tagline {
-    text-align: center;
-  }
-  
-
-  /* Main Body Text Formatting */
-  body {
-    background-color: var(--base-color);
-    color: var(--primary-text-color);
-    text-decoration: none;
-    font-family: "Open Sans", "Roboto Slab", "Lucida Grande", "Lucida Sans", Arial,
-      sans-serif;
-    line-height: 1.5;
-  }
-  
-  p {
-    padding: 10px;
-    padding-top: 10px;
-    margin: 10px;
-    word-spacing: 1.5px;
-    width: 70%;
-    text-align: justify;
-  }
-  
-  .page-section {
-    text-align: left;
-    display: flex;
-    margin-bottom: 20px;
-  }
-  
-  /* Skills */
-  .logo {
-    max-height: fit-content;
-    max-width: fit-content;
-  }
-  
-  .skillsCard {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .flexItemSkill {
-    width: 260px;
-    height: 260px;
-    margin: 10px;
-    border: 1px solid black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between; /* Change to space-between for equal spacing */
-    object-fit: contain;
-  }
-  
-  .flexContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  
-  .content {
-    position: relative;
-  }
-  
-  .overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: .5s ease;
-    background-color: #008CBA;
+  background-color: var(--primary-bg-color);
+  color: var(--base-color);
+  list-style: none;
+  font-size: var(--nav-bar-font-size);
 }
 
-.content:hover .overlay {
-  opacity: 1;
+.custom-navbar a {
+  text-decoration: none;
+  color: var(--nav-text-color);
+  transition: color 0.5s;
 }
 
-  .overlay-text {
-    color: white;
-    font-size: 16px;
-    position: absolute;
-    text-align: center;
-  }
+.custom-navbar a:hover {
+  color: var(--primary-link-hover-color);
+}
 
-  .skill-logo {
-    display: block;
-    width: 100%;
-    height: auto;
-    max-width:100%;
-    max-height:100%;
-  }
+.custom-navbar .navbar-brand {
+  color: #ff851b;
+}
 
-  /* featured project section */  
-  .flexPrimary {
-    width: 1100px;
-    height: 600px;
-    margin: 10px;
-    border: 1px solid black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  
-  /* other projects section */
-  .flexContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .flexRow {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .flexItem {
-    width: 540px;
-    height: 300px;
-    margin: 10px;
-    border: 1px solid black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
+.custom-navbar .navbar-nav {
+  margin-left: auto;
+}
 
-  .flexItem2 {
-    width: 355px;
-    height: 200px;
-    margin: 10px;
-    border: 1px solid black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
+.custom-navbar .navbar-nav .nav-link {
+  color: var(--base-color);
+  padding: 0.5rem 1rem;
+}
 
-  .flexItem3 {
-    width: 265px;
-    height: 150px;
-    margin: 5px;
-    border: 1px solid black;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  
-  .project {
-    object-fit: contain;
-  }
+.custom-navbar .navbar-nav .nav-link:hover {
+  color: var(--primary-link-hover-color);
+  padding: 0.5rem 1rem;
+}
 
-  /* Contact Me */
-  #contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .contact-item {
-    font-size: 18px;
-    width: 80%;
-    display: flex;
-    padding-top: 10px;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-  }
-  
-  .contact-item a {
-    text-decoration: none;
-    color: var(--primary-heading-color);
-    transition: color 0.5s;
-  }
-  
-  .contact-item a:hover {
-    color: var(--link-hover-color);
-  }  
+/* Jumbotron */
+.myjumbo {
+  min-width: 500px;
+  max-height: 500px;
+  font-size: 24px;
+}
 
-  /* Footer */
+.myhero {
+  background-color: var(--jumbo-bg-color) !important;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.jumboButton {
+  background-color: var(--jumbo-btn-color);
+  border-color: var(--jumbo-btn-border-color);
+}
+
+.jumboButton:hover {
+  background-color: var(--jumbo-btn-hover-color);
+  border-color: var(--jumbo-btn-hover-border);
+}
+
+.tagline {
+  text-align: center;
+}
+
+/* Main Body Text Formatting */
+body {
+  background-color: var(--base-color);
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-family: "Open Sans", "Roboto Slab", "Lucida Grande", "Lucida Sans", Arial,
+    sans-serif;
+  line-height: 1.5;
+}
+
+p {
+  padding: 10px;
+  padding-top: 10px;
+  margin: 10px;
+  word-spacing: 1.5px;
+  width: 70%;
+  text-align: justify;
+}
+
+.page-section {
+  text-align: left;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* Skills */
+.skill-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item {
+  width: 260px;
+  height: 260px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Change to space-between for equal spacing */
+  object-fit: contain;
+}
+
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* Skill Overlays */
+.skill-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+}
+
+.skill-content:hover .skill-overlay {
+  opacity: 0.95;
+}
+
+.skill-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--skill-overlay-bg-color);
+}
+
+.skill-overlay-text {
+  color: var(--overlay-text-color);
+  font-size: var(--secondary-text-font-size);
+  position: absolute;
+  text-align: center;
+}
+
+/* Featured Project Section & Overlay (Row 0) */
+.primary-project {
+  width: 1100px;
+  height: 600px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  object-fit: contain;
+}
+
+.primary-overlay-text {
+  color: var(--overlay-text-color);
+  font-size: var(--primary-text-font-size);
+  justify-content: center;
+  text-align: center;
+}
+
+.primary-content:hover .primary-overlay {
+  opacity: 0.95;
+}
+
+.primary-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--featured-overlay-bg-color);
+}
+
+/* Featured Project Section Buttons */
+
+.primary-buttons .visit-page-btn,
+.primary-buttons .visit-repo-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Add some margin between buttons */
+}
+
+.primary-buttons {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* Projects Section All */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: center;
+}
+
+/* Project Button Styles */
+.visit-page-btn:hover {
+  background-color: var(--page-btn-hover-color);
+  border: var(--page-btn-border-color);
+  color: var(--btn-text-color);
+}
+
+.visit-repo-btn:hover {
+  background-color: var(--repo-btn-hover-color);
+  border: var(--repo-btn-color);
+  color: var(--btn-text-color);
+}
+
+.visit-page-btn {
+  background-color: var(--page-btn-color);
+  background-color: var(--page-btn-hover-color);
+  color: var(--btn-text-color);
+}
+
+.visit-repo-btn {
+  background-color: var(--repo-btn-color);
+  border: var(--repo-btn-hover-color);
+  color: var(--btn-text-color);
+}
+
+/* Other Projects Section Row 1 & Overlay */
+.secondary-project {
+  width: 540px;
+  height: 300px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  object-fit: contain;
+}
+
+.secondary-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  object-fit: contain;
+}
+
+.secondary-content:hover .secondary-overlay {
+  opacity: 0.95;
+}
+
+.secondary-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--project-overlay-bg-color);
+}
+
+.secondary-text {
+  color: var(--overlay-text-color);
+  font-size: var(--secondary-text-font-size);
+  position: absolute;
+  text-align: center;
+}
+
+/* Secondary Section Buttons */
+.secondary-buttons {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.secondary-buttons .visit-page-btn,
+.secondary-buttons .visit-repo-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Add some margin between buttons */
+}
+
+/* Other Projects Section Row 2 & Overlay */
+.tertiary-project {
+  width: 355px;
+  height: 200px;
+  margin: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+
+.tertiary-content {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  object-fit: contain;
+}
+
+.tertiary-content:hover .tertiary-overlay {
+  opacity: 0.95;
+}
+
+.tertiary-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--project-overlay-bg-color);
+}
+
+.tertiary-overlay-text {
+  color: var(--overlay-text-color);
+  font-size: var(--tertiary-text-font-size);
+  position: absolute;
+  text-align: center;
+  width: 100%;
+}
+
+/* Other Projects Buttons */
+.tertiary-buttons {
+  position: absolute;
+  bottom: 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.tertiary-buttons .visit-page-btn,
+.tertiary-buttons .visit-repo-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+/* Other Projects Section Row 3-4 & Overlays */
+.quaternary-project {
+  width: 265px;
+  height: 150px;
+  margin: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+  object-fit: contain;
+}
+
+.quaternary-content {
+  position: relative;
+}
+
+.quaternary-content:hover .quaternary-overlay {
+  opacity: 0.95;
+}
+
+.quaternary-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: var(--project-overlay-bg-color);
+}
+
+.quaternary-overlay-text {
+  color: var(--overlay-text-color);
+  font-size: var(--quaternary-text-font-size);
+  position: absolute;
+  text-align: center;
+}
+
+/* Other Projects Row 3-4 Buttons */
+
+.quaternary-buttons {
+  position: absolute;
+  bottom: 10px; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.quaternary-buttons .visit-page-btn,
+.quaternary-buttons .visit-repo-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Add some margin between buttons */
+}
+
+.secondary-project img,
+.tertiary-project img,
+.quaternary-project img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.project-image {
+  display: block;
+}
+
+.project-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-project-image {
+  width: 100%;
+  height: auto;
+}
+
+/* Contact Me */
+#contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-item {
+  font-size: 18px;
+  width: 80%;
+  display: flex;
+  padding-top: 10px;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: var(--primary-text-color);
+  transition: color 0.5s;
+}
+
+.contact-item a:hover {
+  color: var(--link-hover-color);
+}
+
+/* Footer */
 footer {
-    background-color: var(--secondary-background-color);
-    color: var(--base-color);
-  }
+  background-color: var(--primary-bg-color);
+  color: var(--base-color);
+}
 
-  .custom-footer a {
-    color: white;
-    font-size: 20px;
-  }
+.custom-footer a {
+  color: var(--base-color);
+  font-size: 20px;
+}
 
-  #copyright {
-    color: var(--base-color);
-    align-items: center;
-    width: 100%;
-      text-align: center;
-  }
+#copyright {
+  color: var(--base-color);
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
