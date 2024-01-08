@@ -303,6 +303,10 @@ nav {
     justify-content: flex-end;
   }
   
+  .project {
+    object-fit: contain;
+  }
+
   /* Contact Me */
   #contact {
     display: flex;
