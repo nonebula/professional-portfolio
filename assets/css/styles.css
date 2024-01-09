@@ -11,7 +11,7 @@
 
   /* Link Colors */
   --primary-link-hover-color: hsla(30, 100%, 50%, 1);
-  --secondary-link-hover-color: hsla(30, 100%, 50%, 0.8);
+  --secondary-link-hover-color: hsla(90, 50%, 60%, 1);
 
   /* Font Sizes */
   --primary-heading-font-size: 32px;
@@ -25,10 +25,10 @@
   --quaternary-text-font-size: 12px;
 
   /* Text Colors */
-  --primary-heading-color: hsla(218, 100%, 29%, 1);
-  --secondary-heading-color: hsla(25, 100%, 50%, 1);
-  --tertiary-heading-color: hsla(218, 100%, 29%, 1);
-  --quaternary-heading-color: hsla(218, 100%, 29%, 1);
+  --primary-heading-color: hsla(210, 50%, 60%, 1); /* Blue */
+  --secondary-heading-color: hsla(30, 100%, 50%, 1); /* Orange */
+  --tertiary-heading-color: hsla(210, 50%, 60%, 1);
+  --quaternary-heading-color: hsla(90, 50%, 60%, 1);
 
   --primary-text-color: hsla(0, 0%, 13%, 1);
   --secondary-text-color: hsla(206, 5%, 30%, 1);
@@ -36,32 +36,34 @@
   --quaternary-text-color: hsla(205, 46%, 79%, 1);
 
   /* Border Colors */
-  --primary-border-color: hsla(218, 100%, 29%, 0.8);
-  --secondary-border-color: hsla(218, 100%, 29%, 0.6);
-  --tertiary-border-color: hsla(205, 46%, 79%, 0.4);
-  --quaternary-border-color: hsla(205, 46%, 79%, 0.2);
+  --primary-border-color: hsla(210, 50%, 60%, 1); /* Blue */
+  --secondary-border-color: hsla(30, 100%, 50%, 1); /* Orange */
+  --tertiary-border-color: hsla(90, 50%, 60%, 1); /* Green */
+  --quaternary-border-color: hsla(210, 50%, 60%, 1); /* Blue */
 
   /* Background Colors */
-  --primary-bg-color: hsla(218, 100%, 29%, 1);
-  --secondary-bg-color: hsla(218, 100%, 29%, 0.7);
-  --tertiary-bg-color: hsla(205, 46%, 79%, 1);
-  --quaternary-bg-color: hsla(205, 46%, 79%, 1);
-  --jumbo-bg-color: hsla(218, 100%, 29%, 0.4);
+  --primary-bg-color: hsla(210, 50%, 60%, 1); /* Blue */
+  --secondary-bg-color: hsla(30, 100%, 50%, 0.7); /* Orange */
+  --tertiary-bg-color: hsla(90, 50%, 60%, 1); /* Green */
+  --quaternary-bg-color: hsla(210, 50%, 60%, 1); /* Blue */
+  --jumbo-bg-color: hsla(90, 50%, 60%, 0.5);
 
   /* Overlay Variables */
-  --skill-overlay-heading-color: hsla(25, 100%, 50%, 1);
-  --featured-overlay-heading-color: hsla(25, 100%, 50%, 1);
-  --project-overlay-heading-color: hsla(25, 100%, 50%, 1);
+  --skill-overlay-heading-color: hsla(30, 100%, 50%, 1); /* Orange */
+  --featured-overlay-heading-color: hsla(90, 50%, 60%, 1); /* Green */
+  --project-overlay-heading-color: hsla(210, 50%, 60%, 1); /* Blue */
   --overlay-text-color: var(--base-color);
-  --skill-overlay-bg-color: hsla(218, 100%, 29%, 0.9);
-  --featured-overlay-bg-color: hsla(218, 100%, 29%, 0.9);
-  --project-overlay-bg-color: hsla(218, 100%, 29%, 0.9);
+  --skill-overlay-bg-color: hsla(30, 100%, 50%, 1); /* Orange */
+  --featured-overlay-bg-color: hsla(90, 50%, 60%, 1); /* Green */
+  --project-overlay-bg-color: hsla(210, 50%, 60%, 1); /* Blue */
 
   /* Button Variables */
-  --repo-btn-color: hsla(15, 100%, 50%, 1);
-  --repo-btn-hover-color: hsla(15, 100%, 50%, 0.75);
-  --page-btn-color: hsla(140, 100%, 30%, 1);
-  --page-btn-hover-color: hsla(140, 100%, 30%, 0.75);
+  --repo-btn-color: hsla(90, 50%, 60%, 1); /* Blue */
+  --repo-btn-hover-color: hsla(90, 50%, 60%, 0.8); /* Blue */
+  --page-btn-color: hsla(30, 100%, 50%, 1); /* Orange */
+  --page-btn-hover-color: hsla(30, 100%, 50%, 0.8); /* Orange */
+  --featured-repo-btn-color: hsla(210, 50%, 60%, 1);
+  --featured-repo-btn-hover: hsla(210, 50%, 60%, 0.8);
 
   /* Jumbotron Styling */
   --jumbo-btn-color: hsla(15, 100%, 50%, 0.7);
@@ -89,7 +91,7 @@ h2 {
 
 h3 {
   font-size: var(--secondary-heading-font-size);
-  color: var(--secondary-heading-color);
+  color: var(--tertiary-heading-color);
   font-weight: bold;
   text-decoration: underline;
   text-align: center;
@@ -144,6 +146,11 @@ nav {
 
 .custom-navbar .navbar-brand {
   color: #ff851b;
+  font-size: 28px;
+}
+
+.custom-navbar .navbar-brand:hover {
+  color: var(--secondary-link-hover-color);
 }
 
 .custom-navbar .navbar-nav {
@@ -294,6 +301,12 @@ p {
   object-fit: contain;
 }
 
+.primary-project h1 {
+  text-align: center;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
 .primary-overlay-text {
   color: var(--overlay-text-color);
   font-size: var(--primary-text-font-size);
@@ -316,6 +329,7 @@ p {
   opacity: 0;
   transition: 0.5s ease;
   background-color: var(--featured-overlay-bg-color);
+  padding: 10%;
 }
 
 /* Featured Project Section Buttons */
@@ -324,7 +338,7 @@ p {
 .primary-buttons .visit-repo-btn {
   display: inline-block;
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: 24px;
   text-align: center;
   text-decoration: none;
   color: white;
@@ -333,8 +347,17 @@ p {
   margin-right: 10px; /* Add some margin between buttons */
 }
 
+.primary-buttons .visit-repo-btn {
+  background-color: var(--featured-repo-btn-color);
+}
+
+.primary-buttons .visit-repo-btn:hover {
+  background-color: var(--featured-repo-btn-hover);
+}
+
 .primary-buttons {
-  position: absolute;
+  position: relative;
+  top: 30px;
   bottom: 10px; /* Adjust as needed */
   display: flex;
   justify-content: center;
@@ -413,6 +436,7 @@ p {
   opacity: 0;
   transition: 0.5s ease;
   background-color: var(--project-overlay-bg-color);
+  padding: 5%;
 }
 
 .secondary-text {
@@ -481,6 +505,7 @@ p {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
+  padding: 3%;
   background-color: var(--project-overlay-bg-color);
 }
 
@@ -550,7 +575,7 @@ p {
 .quaternary-overlay-text {
   color: var(--overlay-text-color);
   font-size: var(--quaternary-text-font-size);
-  position: absolute;
+  position: relative;
   text-align: center;
 }
 
@@ -621,7 +646,7 @@ p {
 }
 
 .contact-item a:hover {
-  color: var(--link-hover-color);
+  color: var(--secondary-link-hover-color);
 }
 
 /* Footer */
@@ -633,6 +658,10 @@ footer {
 .custom-footer a {
   color: var(--base-color);
   font-size: 20px;
+}
+
+.custom-footer a:hover {
+  color: var(--primary-link-hover-color);
 }
 
 #copyright {
