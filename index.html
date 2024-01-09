@@ -7,28 +7,28 @@
     <title>Joe Higgs // Web Developer</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
-      crossorigin="anonymous"
     />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link href="./assets/css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js"></script>
   </head>
 
   <body>
     <!-- Navigation Bar -->
     <header>
       <nav class="navbar navbar-expand-lg custom-navbar">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="https://github.com/nonebula"
             >Joe Higgs</a
           >
           <button
-            class="navbar-toggler"
+            class="navbar-toggler navbar-light"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -36,29 +36,29 @@
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon navbar-light"></span>
           </button>
           <div class="collapse navbar-collapse navbar-light" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#about"
-                  ><i class="fas fa-user"></i>About Me</a
-                >
+                <a class="nav-link" aria-current="page" href="#about">
+                  <i class="fas fa-user"></i>About Me
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#skills"
-                  ><i class="fas fa-code"></i>Skills</a
-                >
+                <a class="nav-link" href="#skills">
+                  <i class="fas fa-code"></i>Skills
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#featured-project"
-                  ><i class="fas fa-folder-open"></i>Projects</a
-                >
+                <a class="nav-link" href="#featured-project">
+                  <i class="fas fa-folder-open"></i>Projects
+                </a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#contact"
-                  ><i class="fas fa-envelope"></i>Contact Me</a
-                >
+                <a class="nav-link" href="#contact">
+                  <i class="fas fa-envelope"></i>Contact Me
+                </a>
               </li>
             </ul>
           </div>
@@ -67,220 +67,276 @@
     </header>
 
     <!-- Jumbo -->
-    <div class="p-5 mb-4 bg-body-tertiary myhero">
-      <div class="container-fluid py-5 myjumbo">
-        <h1 class="display-5 fw-bold">
-          Responsive Web Design at Your Fingertips!
-        </h1>
-        <p class="col-md-12 fs-4 tagline">
-          Search no longer. Click below to download my resume.
-        </p>
-        <a
-          href="./assets/downloads/cv.pdf"
-          download
-          class="btn btn-primary btn-lg jumboButton"
-          >Download Resume</a
-        >
-      </div>
+
+    <div class="container-fluid p-5 myhero text-center pt-5 pb-5">
+      <h1 class="display-4">Responsive Web Design at Your Fingertips!</h1>
+      <p class="lead">Actively Seeking Employment Opportunities</p>
+      <hr class="my-4" />
+      <p>Search no longer. Click below to download my resume.</p>
+      <a
+        class="btn btn-primary btn-lg mt-4 jumboButton"
+        href="./assets/downloads/cv.pdf"
+        download
+        role="button"
+        >Download Resume</a
+      >
     </div>
 
     <main class="page-wrapper">
       <!-- about me -->
       <section class="page-section" id="about">
-        <h2>About Me</h2>
-        <p>
-          Fuelled by a passion for creating engaging and user-friendly
-          interfaces, I recently completed a comprehensive frontend web
-          development bootcamp, equipping me with a solid foundation in HTML,
-          CSS, and JavaScript. I am excited to embark on a career in frontend
-          development, where I can combine my technical skills with my creative
-          problem-solving abilities to deliver exceptional user experiences. I
-          am proficient in utilizing HTML and CSS to craft responsive and
-          visually appealing web pages, and I am adept at employing JavaScript
-          to implement interactive elements and enhance user engagement. I am
-          also familiar with popular frameworks such as React and Angular, and I
-          am eager to expand my knowledge in these areas.
-          <br />
-          <br />
-          My background in teaching has instilled in me strong communication and
-          collaboration skills, enabling me to effectively work with designers,
-          backend developers, and project managers to achieve common goals. I am
-          a quick learner and a self-motivated individual, always seeking
-          opportunities to expand my skillset and stay abreast of the latest
-          trends in frontend development. I am actively seeking an entry-level
-          frontend web development position where I can contribute my skills and
-          enthusiasm to a team of passionate developers. I am confident in my
-          ability to learn quickly, adapt to new technologies, and deliver
-          high-quality work that meets the demands of a fast-paced environment.
-        </p>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-3">
+              <h2>About Me</h2>
+            </div>
+            <div class="col-lg-10">
+              <p>
+                Fuelled by a passion for creating engaging and user-friendly
+                interfaces, I recently completed a comprehensive frontend web
+                development bootcamp, equipping me with a solid foundation in
+                HTML, CSS, and JavaScript. I am excited to embark on a career in
+                frontend development, where I can combine my technical skills
+                with my creative problem-solving abilities to deliver
+                exceptional user experiences. I am proficient in utilizing HTML
+                and CSS to craft responsive and visually appealing web pages,
+                and I am adept at employing JavaScript to implement interactive
+                elements and enhance user engagement. I am also familiar with
+                popular frameworks such as React and Angular, and I am eager to
+                expand my knowledge in these areas.
+                <br />
+                <br />
+                My background in teaching has instilled in me strong
+                communication and collaboration skills, enabling me to
+                effectively work with designers, backend developers, and project
+                managers to achieve common goals. I am a quick learner and a
+                self-motivated individual, always seeking opportunities to
+                expand my skillset and stay abreast of the latest trends in
+                frontend development. I am actively seeking an entry-level
+                frontend web development position where I can contribute my
+                skills and enthusiasm to a team of passionate developers. I am
+                confident in my ability to learn quickly, adapt to new
+                technologies, and deliver high-quality work that meets the
+                demands of a fast-paced environment.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <!-- Skills section-->
       <section class="page-section" id="skills">
-        <h2>Skills</h2>
-        <div class="column"></div>
-        <div class="skill-container">
-          <div class="flex-row">
-            <div class="skill-item">
-              <div class="skill-content">
-                <img
-                  src="./assets/Images/html-240.jpg"
-                  class="skill-logo"
-                  alt="html logo"
-                />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
-                    <h3>HTML</h3>
-                    <div class="skill-overlay-text">
-                      Expert in crafting web content with precise code.
-                      Proficient in semantic HTML for organized, accessible
-                      websites across devices. Committed to high coding
-                      standards, ensuring user-friendly web experiences.
+        <div class="container">
+          <div class="row">
+            <!-- Heading Column -->
+            <div class="col-lg-2 col-md-3 col-sm-12 mb-3">
+              <h2>Skills</h2>
+            </div>
+
+            <!-- Content Column -->
+            <div class="col-lg-10 col-md-9 col-sm-12">
+              <div class="skill-container">
+                <!-- HTML Skill -->
+                <div class="row">
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <img
+                          src="./assets/Images/html-240.jpg"
+                          class="skill-logo img-fluid"
+                          alt="html logo"
+                        />
+                        <div class="skill-overlay">
+                          <div class="skill-text-heading">
+                            <h3>HTML</h3>
+                            <div class="skill-overlay-text">
+                              Expert in crafting web content with precise code.
+                              Proficient in semantic HTML for organized,
+                              accessible websites across devices. Committed to
+                              high coding standards, ensuring user-friendly web
+                              experiences.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- CSS Skill -->
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <img
+                          src="./assets/Images/css-240.jpg"
+                          class="skill-logo img-fluid"
+                          alt="css logo"
+                        />
+                        <div class="skill-overlay">
+                          <div class="skill-text-heading">
+                            <h3>CSS</h3>
+                            <div class="skill-overlay-text">
+                              CSS expert with a focus on crafting visually
+                              appealing and responsive web designs. Proficient
+                              in clean code practices, layout optimization, and
+                              Bootstrap, ensuring user-friendly interfaces that
+                              enhance website aesthetics.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- JavaScript Skill -->
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <img
+                          src="./assets/Images/javascript-240.jpg"
+                          class="skill-logo img-fluid"
+                          alt="javascript logo"
+                        />
+                        <div class="skill-overlay">
+                          <div class="skill-text-heading">
+                            <h3>Javascript</h3>
+                            <div class="skill-overlay-text">
+                              I specialize in creating dynamic, interactive web
+                              experiences. My skills encompass clean coding
+                              practices, robust client-side functionality, and
+                              enhancing website interactivity.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- WordPress Skill -->
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <img
+                          src="./assets/Images/wordpress-240.jpg"
+                          class="skill-logo img-fluid"
+                          alt="wordpress logo"
+                        />
+                        <div class="skill-overlay">
+                          <div class="skill-text-heading">
+                            <h3>Wordpress</h3>
+                            <div class="skill-overlay-text">
+                              I'm skilled in customizing and managing content on
+                              this popular platform. My expertise includes theme
+                              development, plugin customization, and creating
+                              user-friendly websites that meet specific client
+                              needs.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-content">
-                <img
-                  src="./assets/Images/css-240.jpg"
-                  class="skill-logo"
-                  alt="css logo"
-                />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
-                    <h3>CSS</h3>
-                    <div class="skill-overlay-text">
-                      CSS expert with a focus on crafting visually appealing and
-                      responsive web designs. Proficient in clean code
-                      practices, layout optimization, and Bootstrap, ensuring
-                      user-friendly interfaces that enhance website aesthetics.
+
+                <!-- Second Row -->
+                <div class="row">
+                  <!-- React Skill -->
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <img
+                          src="./assets/Images/react-240.jpg"
+                          class="skill-logo img-fluid"
+                          alt="react logo"
+                        />
+                        <div class="skill-overlay">
+                          <div class="skill-text-heading">
+                            <h3>React</h3>
+                            <div class="skill-overlay-text">
+                              I specialize in crafting dynamic and responsive
+                              web applications. My expertise includes creating
+                              interactive user interfaces, efficient state
+                              management, and developing reusable components for
+                              seamless and engaging user experiences.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-content">
-                <img
-                  src="./assets/Images/javascript-240.jpg"
-                  class="skill-logo"
-                  alt="javascript logo"
-                />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
-                    <h3>Javascript</h3>
-                    <div class="skill-overlay-text">
-                      I specialize in creating dynamic, interactive web
-                      experiences. My skills encompass clean coding practices,
-                      robust client-side functionality, and enhancing website
-                      interactivity.
+
+                  <!-- Angular Skill -->
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <img
+                          src="./assets/Images/angular-240.jpg"
+                          class="skill-logo img-fluid"
+                          alt="angular logo"
+                        />
+                        <div class="skill-overlay">
+                          <div class="skill-text-heading">
+                            <h3>Angular</h3>
+                            <div class="skill-overlay-text">
+                              I specialize in developing robust, single-page web
+                              applications. My expertise includes creating
+                              modular, maintainable code, managing data flow,
+                              and leveraging Angular's powerful features for
+                              high-performance, interactive web solutions.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-content">
-                <img
-                  src="./assets/Images/wordpress-240.jpg"
-                  class="skill-logo"
-                  alt="wordpress logo"
-                />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
-                    <h3>Wordpress</h3>
-                    <div class="skill-overlay-text">
-                      I'm skilled in customizing and managing content on this
-                      popular platform. My expertise includes theme development,
-                      plugin customization, and creating user-friendly websites
-                      that meet specific client needs.
+
+                  <!-- Project Management Skill -->
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <img
+                          src="./assets/images/project-management-96.png"
+                          class="skill-logo img-fluid"
+                          alt="project management logo"
+                        />
+                        <div class="skill-overlay">
+                          <div class="skill-text-heading">
+                            <h3>Project Management</h3>
+                            <div class="skill-overlay-text">
+                              My teaching background ensures efficient
+                              coordination and task prioritization. My strengths
+                              include strategic planning and communication,
+                              ensuring successful project outcomes through
+                              organized and collaborative efforts.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="flex-row">
-            <div class="skill-item">
-              <div class="skill-content">
-                <img
-                  src="./assets/Images/react-240.jpg"
-                  class="skill-logo"
-                  alt="react logo"
-                />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
-                    <h3>React</h3>
-                    <div class="skill-overlay-text">
-                      I specialize in crafting dynamic and responsive web
-                      applications. My expertise includes creating interactive
-                      user interfaces, efficient state management, and
-                      developing reusable components for seamless and engaging
-                      user experiences.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-content">
-                <img
-                  src="./assets/Images/angular-240.jpg"
-                  class="skill-logo"
-                  alt="angular logo"
-                />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
-                    <h3>Angular</h3>
-                    <div class="skill-overlay-text">
-                      I specialize in developing robust, single-page web
-                      applications. My expertise includes creating modular,
-                      maintainable code, managing data flow, and leveraging
-                      Angular's powerful features for high-performance,
-                      interactive web solutions.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-content">
-                <img
-                  src="./assets/images/project-management-96.png"
-                  class="skill-logo"
-                  alt="project management logo"
-                />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
-                    <h3>Project Management</h3>
-                    <div class="skill-overlay-text">
-                      My teaching background ensures efficient coordination and
-                      task prioritization. My strengths include strategic
-                      planning and communication, ensuring successful project
-                      outcomes through organized and collaborative efforts.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="skill-item">
-              <div class="skill-content">
-                <img
-                  src="./assets/images/team-96.png"
-                  class="skill-logo"
-                  alt="pair programming logo"
-                />
-                <div class="skill-overlay">
-                  <div class="skill-text-heading">
-                    <h3>Pair Programming</h3>
-                    <div class="skill-overlay-text">
-                      I bring expertise from my teaching background to enhance
-                      code quality and productivity. With effective
-                      communication and shared problem-solving, I excel in this
-                      programming approach, fostering high-quality teamwork and
-                      results.
+
+                  <!-- Pair Programming Skill -->
+                  <div class="col-md-3 col-sm-6 mb-3">
+                    <div class="skill-item">
+                      <div class="skill-content">
+                        <img
+                          src="./assets/images/team-96.png"
+                          class="skill-logo img-fluid"
+                          alt="pair programming logo"
+                        />
+                        <div class="skill-overlay">
+                          <div class="skill-text-heading">
+                            <h3>Pair Programming</h3>
+                            <div class="skill-overlay-text">
+                              I bring expertise from my teaching background to
+                              enhance code quality and productivity. With
+                              effective communication and shared
+                              problem-solving, I excel in this programming
+                              approach, fostering high-quality teamwork and
+                              results.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -290,289 +346,87 @@
         </div>
       </section>
 
-      <!-- portfolio container -->
+      <!-- Project 1 -->
       <section class="page-section" id="featured-project">
-        <h2>Featured Project</h2>
-        <div class="column"></div>
-        <div class="primary-project primary-content">
-          <div class="primary-project project-container">
-            <img
-              src="./assets/images/project-screens/placeholder.png"
-              class="main-project-image"
-              alt="Guardian Street Mapper screenshot"
-            />
-            <div class="primary-overlay">
-              <div class="primary-overlay-heading">
-                <h1>Guardian Street Mapper</h1>
-                <div class="primary-overlay-text">
-                  An independent project developed to inform citizens and track
-                  thefts and robberies. This project was developed after I
-                  witnessed three phone thefts in the same area within a
-                  two-week period. Too many phone thefts take place nowadays,
-                  and many people have no idea how to respond to the situation.
-                  This page contains information and advice, as well as giving
-                  users the option to log an incident without sharing personal
-                  information.
-                  <br /><b>Skills:</b> HTML, CSS. GitHub, JavaScript, DOM, API.
-                </div>
-                <div class="primary-buttons">
-                  <a
-                    class="visit-page-btn"
-                    href="https://nonebula.github.io/GuardianStreetMapper/"
-                  >
-                    Visit Page
-                  </a>
-                  <a
-                    class="visit-repo-btn"
-                    href="https://github.com/nonebula/GuardianStreetMapper"
-                  >
-                    Visit Repo
-                  </a>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-12 mb-3">
+              <h2>Featured Project</h2>
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-12">
+              <div class="primary-project primary-content">
+                <div class="primary-project project-container">
+                  <img
+                    src="./assets/images/project-screens/placeholder.png"
+                    class="main-project-image img-fluid"
+                    alt="Guardian Street Mapper screenshot"
+                  />
+                  <div class="primary-overlay">
+                    <div class="primary-overlay-heading">
+                      <h1>Guardian Street Mapper</h1>
+                      <div class="primary-overlay-text">
+                        An independent project developed to inform citizens and
+                        track thefts and robberies. This project was developed
+                        after I witnessed three phone thefts in the same area
+                        within a two-week period. Too many phone thefts take
+                        place nowadays, and many people have no idea how to
+                        respond to the situation. This page contains information
+                        and advice, as well as giving users the option to log an
+                        incident without sharing personal information.
+                        <br /><b>Skills:</b> HTML, CSS. GitHub, JavaScript, DOM,
+                        API.
+                      </div>
+                      <div class="primary-buttons">
+                        <a
+                          class="visit-page-btn"
+                          href="https://nonebula.github.io/GuardianStreetMapper/"
+                        >
+                          Visit Page
+                        </a>
+                        <a
+                          class="visit-repo-btn"
+                          href="https://github.com/nonebula/GuardianStreetMapper"
+                        >
+                          Visit Repo
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
       <section class="page-section" id="other-projects">
-        <h2>Other Projects</h2>
-        <div class="column"></div>
-        <div class="alignItems flex-container">
-          <!-- Row 1 -->
-          <div class="flex-row">
-            <div class="secondary-project project secondary-content">
-              <img
-                src="./assets/images/project-screens/ayd-sc.png"
-                class="project-image"
-                alt="Ask Your Dietitian screenshot"
-              />
-              <div class="secondary-overlay">
-                <div class="secondary-text-heading">
-                  <h4>Ask Your Dietitian</h4>
-                  <div class="secondary-overlay-text">
-                    A WordPress project for my client, a dietitian. Website
-                    migrated and maintained and built according to wireframe.
-                    <br /><b>Skills:</b>HTML, CSS. WordPress, Plug-ins, SEO
-                  </div>
-                  <div class="secondary-buttons">
-                    <a
-                      class="visit-page-btn"
-                      href="https://www.askyourdietitian.com/"
-                    >
-                      Visit Page
-                    </a>
-                  </div>
-                </div>
-              </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-12 mb-3">
+              <h2>Other Projects</h2>
             </div>
-            <div class="secondary-project project secondary-content">
-              <img
-                src="./assets/images/project-screens/delicious-recipe-generator.png"
-                class="project-image"
-                alt="Delicious Recipe Generator screenshot"
-              />
-              <div class="secondary-overlay">
-                <div class="secondary-text-heading">
-                  <h4>Delicious Recipe Generator</h4>
-                  <div class="secondary-overlay-text">
-                    A recipe generator that generators recipes based on user
-                    ingredient selections. Users can save their chosen recipes
-                    to local storage and retrieve them on a dedicated page.
-                    <br /><b>Skills:</b>HTML, CSS. GitHub, JavaScript, DOM, API.
-                  </div>
-                  <div class="secondary-buttons">
-                    <a
-                      class="visit-page-btn"
-                      href="https://nonebula.github.io/delicious-recipe-generator/"
-                    >
-                      Visit Page
-                    </a>
-                    <a
-                      class="visit-repo-btn"
-                      href="https://github.com/nonebula/delicious-recipe-generator"
-                    >
-                      Visit Repo
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="flex-row">
-            <div class="tertiary-project project tertiary-content">
-              <img
-                src="./assets/images/project-screens/placeholder.png"
-                class="project-image"
-                alt="Group Project 2 screenshot"
-              />
-              <div>
-                <div class="tertiary-overlay">
-                  <div class="tertiary-text-heading">
-                    <h5>Group Project 2</h5>
-                    <div class="tertiary-overlay-text">
-                      A recipe generator that generators recipes based on user
-                      ingredient selections. Users can loren ipsum.
-                      <br /><b>Skills:</b>HTML, CSS. GitHub, JavaScript, DOM,
-                      API.
-                    </div>
-                    <div class="tertiary-buttons">
-                      <a
-                        class="visit-page-btn"
-                        href="https://nonebula.github.io/groupproject2/"
-                      >
-                        Visit Page
-                      </a>
-                      <a
-                        class="visit-repo-btn"
-                        href="https://github.com/nonebula/groupproject2"
-                      >
-                        Visit Repo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="tertiary-project project tertiary-content">
-              <img
-                src="./assets/images/project-screens/placeholder.png"
-                class="project-image"
-                alt="Homework 12 screenshot"
-              />
-              <div>
-                <div class="tertiary-overlay">
-                  <div class="tertiary-text-heading">
-                    <h5>Homework 12</h5>
-                    <div class="tertiary-overlay-text">
-                      A recipe generator that generators recipes based on user
-                      ingredient selections. Users can loren ipsum.
-                      <br /><b>Skills:</b>HTML, CSS. GitHub, JavaScript, DOM,
-                      API.
-                    </div>
-                    <div class="tertiary-buttons">
-                      <a
-                        class="visit-page-btn"
-                        href="https://nonebula.github.io/homework12/"
-                      >
-                        Visit Page
-                      </a>
-                      <a
-                        class="visit-repo-btn"
-                        href="https://github.com/nonebula/homework12"
-                      >
-                        Visit Repo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 4 -->
-            <div class="tertiary-project project tertiary-content">
-              <img
-                src="./assets/images/project-screens/placeholder.png"
-                class="project-image"
-                alt="Smart Readme Generator screenshot"
-              />
-              <div>
-                <div class="tertiary-overlay">
-                  <div class="tertiary-text-heading">
-                    <h5>Smart Readme Generator</h5>
-                    <div class="tertiary-overlay-text">
-                      A recipe generator that generators recipes based on user
-                      ingredient selections. Users can loren ipsum.
-                      <br /><b>Skills:</b>HTML, CSS. GitHub, JavaScript, DOM,
-                      API.
-                    </div>
-                    <div class="tertiary-buttons">
-                      <a
-                        class="visit-page-btn"
-                        href="https://nonebula.github.io/homework11/"
-                      >
-                        Visit Page
-                      </a>
-                      <a
-                        class="visit-repo-btn"
-                        href="https://github.com/nonebula/homework11"
-                      >
-                        Visit Repo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Next Row -->
-          <div class="flex-row">
-            <!-- Project 1 -->
-            <div class="quaternary-project project quaternary-content">
-              <img
-                src="./assets/images/project-screens/placeholder.png"
-                class="project-image"
-                alt="Smart Readme Generator screenshot"
-              />
-              <div>
-                <div class="quaternary-overlay">
-                  <div class="quaternary-text-heading">
-                    <h5>README Generator</h5>
-                    <div class="quaternary-overlay-text">
-                      README Generator to generate READMEs based in
-                      instructions.
-                      <br /><b>Skills:</b> GitHub, JavaScript, DOM.
-                    </div>
-                    <div class="quaternary-buttons">
-                      <a
-                        class="visit-page-btn"
-                        href="https://nonebula.github.io/smart-readme-generator/"
-                      >
-                        Visit Page
-                      </a>
-                      <a
-                        class="visit-repo-btn"
-                        href="https://github.com/nonebula/smart-readme-generator"
-                      >
-                        Visit Repo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
             <!-- Project 2 -->
-            <div class="quaternary-project project quaternary-content">
-              <img
-                src="./assets/images/project-screens/weather-dashboard.png"
-                class="project-image"
-                alt="Weather API page screenshot"
-              />
-              <div>
-                <div class="quaternary-overlay">
-                  <div class="quaternary-text-heading">
-                    <h6>Weather Dashboard</h6>
-                    <div class="quaternary-overlay-text">
-                      A dashboard that utilizes web APIs and user input to
-                      return up-to-date weather info.
-                      <br /><b>Skills:</b>CSS. GitHub, JavaScript, DaysJS, API.
+            <div class="col-md-5 col-lg-5 mb-4">
+              <div class="secondary-project project secondary-content">
+                <img
+                  src="./assets/images/project-screens/ayd-sc.png"
+                  class="project-image img-fluid"
+                  alt="Ask Your Dietitian screenshot"
+                />
+                <div class="secondary-overlay">
+                  <div class="secondary-text-heading">
+                    <h4>Ask Your Dietitian</h4>
+                    <div class="secondary-overlay-text">
+                      A WordPress project for my client, a dietitian. Website
+                      migrated and maintained and built according to wireframe.
+                      <br /><b>Skills:</b> HTML, CSS. WordPress, Plug-ins, SEO
                     </div>
-                    <div class="quaternary-buttons">
+                    <div class="secondary-buttons">
                       <a
                         class="visit-page-btn"
-                        href="https://nonebula.github.io/open-weather-map/"
+                        href="https://www.askyourdietitian.com/"
                       >
                         Visit Page
-                      </a>
-                      <a
-                        class="visit-repo-btn"
-                        href="https://github.com/nonebula/open-weather-map"
-                      >
-                        Visit Repo
                       </a>
                     </div>
                   </div>
@@ -581,31 +435,33 @@
             </div>
 
             <!-- Project 3 -->
-            <div class="quaternary-project project quaternary-content">
-              <img
-                src="./assets/images/project-screens/day-scheduler.png"
-                class="project-image"
-                alt="Daily Work Planner screenshot"
-              />
-              <div>
-                <div class="quaternary-overlay">
-                  <div class="quaternary-text-heading">
-                    <h6>Daily Planner</h6>
-                    <div class="quaternary-overlay-text">
-                      A daily planner app that saves user input and tracks time
-                      to show past, present and future.
-                      <br /><b>Skills:</b>CSS. GitHub, JavaScript, DOM, DaysJS.
+            <div class="col-md-5 col-lg-5 mb-4">
+              <div class="secondary-project project secondary-content">
+                <img
+                  src="./assets/images/project-screens/delicious-recipe-generator.png"
+                  class="project-image img-fluid"
+                  alt="Delicious Recipe Generator screenshot"
+                />
+                <div class="secondary-overlay">
+                  <div class="secondary-text-heading">
+                    <h4>Delicious Recipe Generator</h4>
+                    <div class="secondary-overlay-text">
+                      A recipe generator that generates recipes based on user
+                      ingredient selections. Users can save their chosen recipes
+                      to local storage and retrieve them on a dedicated page.
+                      <br /><b>Skills:</b> HTML, CSS. GitHub, JavaScript, DOM,
+                      API.
                     </div>
-                    <div class="quaternary-buttons">
+                    <div class="secondary-buttons">
                       <a
                         class="visit-page-btn"
-                        href="https://nonebula.github.io/fantastic-daily-planner/"
+                        href="https://nonebula.github.io/delicious-recipe-generator/"
                       >
                         Visit Page
                       </a>
                       <a
                         class="visit-repo-btn"
-                        href="https://github.com/nonebula/fantastic-daily-planner"
+                        href="https://github.com/nonebula/delicious-recipe-generator"
                       >
                         Visit Repo
                       </a>
@@ -615,176 +471,422 @@
               </div>
             </div>
 
-            <!-- Project 4 -->
-            <div class="quaternary-project project quaternary-content">
-              <img
-                src="./assets/images/project-screens/quiz-challenge.png"
-                class="project-image"
-                alt="Quiz Project screenshot"
-              />
-              <div>
-                <div class="quaternary-overlay">
-                  <div class="quaternary-text-heading">
-                    <h6>Coding Quiz</h6>
-                    <div class="quaternary-overlay-text">
-                      A coding quiz to test user's knowledge of Javascript
-                      through DOM manipulation.
-                      <br /><b>Skills:</b>HTML, CSS. GitHub, JavaScript, DOM.
-                    </div>
-                    <div class="quaternary-buttons">
-                      <a
-                        class="visit-page-btn"
-                        href="https://nonebula.github.io/super-awesome-quizmaster/"
-                      >
-                        Visit Page
-                      </a>
-                      <a
-                        class="visit-repo-btn"
-                        href="https://github.com/nonebula/super-awesome-quizmaster"
-                      >
-                        Visit Repo
-                      </a>
+            <!-- Next Row (3) -->
+
+            <div class="row">
+              <!-- Project 4 -->
+              <div class="col-md-4 col-lg-4 mb-1">
+                <div class="tertiary-project project tertiary-content">
+                  <img
+                    src="./assets/images/project-screens/placeholder.png"
+                    class="project-image img-fluid"
+                    alt="Group Project 2 screenshot"
+                  />
+                  <div>
+                    <div class="tertiary-overlay">
+                      <div class="tertiary-text-heading">
+                        <h5>Group Project 2</h5>
+                        <div class="tertiary-overlay-text">
+                          A recipe generator that generates recipes based on
+                          user ingredient selections. Users can loren ipsum.
+                          <br /><b>Skills:</b> HTML, CSS. GitHub, JavaScript,
+                          DOM, API.
+                        </div>
+                        <div class="tertiary-buttons">
+                          <a
+                            class="visit-page-btn"
+                            href="https://nonebula.github.io/groupproject2/"
+                          >
+                            Visit Page
+                          </a>
+                          <a
+                            class="visit-repo-btn"
+                            href="https://github.com/nonebula/groupproject2"
+                          >
+                            Visit Repo
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
 
-          <!-- Next Row -->
-          <div class="flex-row">
-            <!-- Project 1 -->
-            <div class="quaternary-project project quaternary-content">
-              <img
-                src="./assets/images/project-screens/Password Generator.png"
-                class="project-image"
-                alt="Fancy Password Generator screenshot"
-              />
-              <div>
-                <div class="quaternary-overlay">
-                  <div class="quaternary-text-heading">
-                    <h6>Password Generator</h6>
-                    <div class="quaternary-overlay-text">
-                      An app that takes user input through prompts and generates
-                      a secure password.
-                      <br /><b>Skills:</b> HTML, CSS. GitHub, JavaScript.
-                    </div>
-                    <div class="quaternary-buttons">
-                      <a
-                        class="visit-page-btn"
-                        href="https://nonebula.github.io/fancy-magic-password-generator/"
-                      >
-                        Visit Page
-                      </a>
-                      <a
-                        class="visit-repo-btn"
-                        href="https://github.com/nonebula/fancy-magic-password-generator"
-                      >
-                        Visit Repo
-                      </a>
+              <!-- Project 5 -->
+              <div class="col-md-4 col-lg-4 mb-1">
+                <div class="tertiary-project project tertiary-content">
+                  <img
+                    src="./assets/images/project-screens/placeholder.png"
+                    class="project-image img-fluid"
+                    alt="Homework 12 screenshot"
+                  />
+                  <div>
+                    <div class="tertiary-overlay">
+                      <div class="tertiary-text-heading">
+                        <h5>Homework 12</h5>
+                        <div class="tertiary-overlay-text">
+                          A recipe generator that generates recipes based on
+                          user ingredient selections. Users can loren ipsum.
+                          <br /><b>Skills:</b> HTML, CSS. GitHub, JavaScript,
+                          DOM, API.
+                        </div>
+                        <div class="tertiary-buttons">
+                          <a
+                            class="visit-page-btn"
+                            href="https://nonebula.github.io/homework12/"
+                          >
+                            Visit Page
+                          </a>
+                          <a
+                            class="visit-repo-btn"
+                            href="https://github.com/nonebula/homework12"
+                          >
+                            Visit Repo
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Project 2 -->
-            <div class="quaternary-project project quaternary-content">
-              <img
-                src="./assets/images/project-screens/M4 Challenge.png"
-                class="project-image"
-                alt="console.log Finances Calculations screenshot"
-              />
-              <div>
-                <div class="quaternary-overlay">
-                  <div class="quaternary-text-heading">
-                    <h6>M4 Challenge</h6>
-                    <div class="quaternary-overlay-text">
-                      A javascript analysis of some finances using console.log
-                      to solve equations.
-                      <br /><b>Skills:</b> Javascript, GitHub.
-                    </div>
-                    <div class="quaternary-buttons">
-                      <a
-                        class="visit-page-btn"
-                        href="https://nonebula.github.io/Console-Finances/"
-                      >
-                        Visit Page
-                      </a>
-                      <a
-                        class="visit-repo-btn"
-                        href="https://github.com/nonebula/Console-Finances"
-                      >
-                        Visit Repo
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Project 3 -->
-            <div class="quaternary-project project quaternary-content">
-              <img
-                src="./assets/images/project-screens/bootstrap-portfolio.png"
-                class="project-image"
-                alt="Bootstrap Portfolio screenshot"
-              />
-              <div>
-                <div class="quaternary-overlay">
-                  <div class="quaternary-text-heading">
-                    <h6>Bootstrap Portfolio</h6>
-                    <div class="quaternary-overlay-text">
-                      My first boostrap portfolio page.<br /><b>Skills:</b>
-                      HTML, CSS. Bootstrap, GitHub.
-                    </div>
-                    <div class="quaternary-buttons">
-                      <a
-                        class="visit-page-btn"
-                        href="https://nonebula.github.io/Bootstrap-Portfolio/"
-                      >
-                        Visit Page
-                      </a>
-                      <a
-                        class="visit-repo-btn"
-                        href="https://github.com/nonebula/Bootstrap-Portfolio"
-                      >
-                        Visit Repo
-                      </a>
+              <!-- Project 6 -->
+              <div class="col-md-4 col-lg-4 mb-1">
+                <div class="tertiary-project project tertiary-content">
+                  <img
+                    src="./assets/images/project-screens/placeholder.png"
+                    class="project-image img-fluid"
+                    alt="Smart Readme Generator screenshot"
+                  />
+                  <div>
+                    <div class="tertiary-overlay">
+                      <div class="tertiary-text-heading">
+                        <h5>Smart Readme Generator</h5>
+                        <div class="tertiary-overlay-text">
+                          A recipe generator that generates recipes based on
+                          user ingredient selections. Users can loren ipsum.
+                          <br /><b>Skills:</b> HTML, CSS. GitHub, JavaScript,
+                          DOM, API.
+                        </div>
+                        <div class="tertiary-buttons">
+                          <a
+                            class="visit-page-btn"
+                            href="https://nonebula.github.io/homework11/"
+                          >
+                            Visit Page
+                          </a>
+                          <a
+                            class="visit-repo-btn"
+                            href="https://github.com/nonebula/homework11"
+                          >
+                            Visit Repo
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <!-- Project 4 -->
-            <div class="quaternary-project project quaternary-content">
-              <img
-                src="./assets/images/project-screens/first-portfolio.png"
-                class="project-image"
-                alt="First Portfolio screenshot"
-              />
-              <div>
-                <div class="quaternary-overlay">
-                  <div class="quaternary-text-heading">
-                    <h6>First Portfolio</h6>
-                    <div class="quaternary-overlay-text">
-                      My first portfolio page. <br /><b>Skills:</b> HTML, CSS.
-                      GitHub.
+            <!-- Next Row (4) -->
+
+            <div class="row">
+              <!-- Project 7 -->
+              <div class="col-md-3 col-lg-3 mb-2">
+                <div class="quaternary-project project quaternary-content">
+                  <img
+                    src="./assets/images/project-screens/placeholder.png"
+                    class="project-image img-fluid"
+                    alt="Smart Readme Generator screenshot"
+                  />
+                  <div>
+                    <div class="quaternary-overlay">
+                      <div class="quaternary-text-heading">
+                        <h5>README Generator</h5>
+                        <div class="quaternary-overlay-text">
+                          README Generator to generate READMEs based in
+                          instructions.
+                          <br /><b>Skills:</b> GitHub, JavaScript, DOM.
+                        </div>
+                        <div class="quaternary-buttons">
+                          <a
+                            class="visit-page-btn"
+                            href="https://nonebula.github.io/smart-readme-generator/"
+                          >
+                            Visit Page
+                          </a>
+                          <a
+                            class="visit-repo-btn"
+                            href="https://github.com/nonebula/smart-readme-generator"
+                          >
+                            Visit Repo
+                          </a>
+                        </div>
+                      </div>
                     </div>
-                    <div class="quaternary-buttons">
-                      <a
-                        class="visit-page-btn"
-                        href="https://nonebula.github.io/joe-higgs-portfolio/"
-                      >
-                        Visit Page
-                      </a>
-                      <a
-                        class="visit-repo-btn"
-                        href="https://github.com/nonebula/joe-higgs-portfolio"
-                      >
-                        Visit Repo
-                      </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 8 -->
+              <div class="col-md-3 col-lg-3 mb-2">
+                <div class="quaternary-project project quaternary-content">
+                  <img
+                    src="./assets/images/project-screens/weather-dashboard.png"
+                    class="project-image img-fluid"
+                    alt="Weather API page screenshot"
+                  />
+                  <div>
+                    <div class="quaternary-overlay">
+                      <div class="quaternary-text-heading">
+                        <h6>Weather Dashboard</h6>
+                        <div class="quaternary-overlay-text">
+                          A dashboard that utilizes web APIs and user input to
+                          return up-to-date weather info.
+                          <br /><b>Skills:</b>CSS. GitHub, JavaScript, DaysJS,
+                          API.
+                        </div>
+                        <div class="quaternary-buttons">
+                          <a
+                            class="visit-page-btn"
+                            href="https://nonebula.github.io/open-weather-map/"
+                          >
+                            Visit Page
+                          </a>
+                          <a
+                            class="visit-repo-btn"
+                            href="https://github.com/nonebula/open-weather-map"
+                          >
+                            Visit Repo
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 9 -->
+              <div class="col-md-3 col-lg-3 mb-2">
+                <div class="quaternary-project project quaternary-content">
+                  <img
+                    src="./assets/images/project-screens/day-scheduler.png"
+                    class="project-image img-fluid"
+                    alt="Daily Work Planner screenshot"
+                  />
+                  <div>
+                    <div class="quaternary-overlay">
+                      <div class="quaternary-text-heading">
+                        <h6>Daily Planner</h6>
+                        <div class="quaternary-overlay-text">
+                          A daily planner app that saves user input and tracks
+                          time to show past, present and future.
+                          <br /><b>Skills:</b>CSS. GitHub, JavaScript, DOM,
+                          DaysJS.
+                        </div>
+                        <div class="quaternary-buttons">
+                          <a
+                            class="visit-page-btn"
+                            href="https://nonebula.github.io/fantastic-daily-planner/"
+                          >
+                            Visit Page
+                          </a>
+                          <a
+                            class="visit-repo-btn"
+                            href="https://github.com/nonebula/fantastic-daily-planner"
+                          >
+                            Visit Repo
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 10 -->
+              <div class="col-md-3 col-lg-3 mb-2">
+                <div class="quaternary-project project quaternary-content">
+                  <img
+                    src="./assets/images/project-screens/quiz-challenge.png"
+                    class="project-image img-fluid"
+                    alt="Quiz Project screenshot"
+                  />
+                  <div>
+                    <div class="quaternary-overlay">
+                      <div class="quaternary-text-heading">
+                        <h6>Coding Quiz</h6>
+                        <div class="quaternary-overlay-text">
+                          A coding quiz to test user's knowledge of Javascript
+                          through DOM manipulation.
+                          <br /><b>Skills:</b>HTML, CSS. GitHub, JavaScript,
+                          DOM.
+                        </div>
+                        <div class="quaternary-buttons">
+                          <a
+                            class="visit-page-btn"
+                            href="https://nonebula.github.io/super-awesome-quizmaster/"
+                          >
+                            Visit Page
+                          </a>
+                          <a
+                            class="visit-repo-btn"
+                            href="https://github.com/nonebula/super-awesome-quizmaster"
+                          >
+                            Visit Repo
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Next Row -->
+            <div class="row">
+              <!-- Project 11 -->
+              <div class="col-md-3 col-lg-3 mb-2">
+                <div class="quaternary-project project quaternary-content">
+                  <img
+                    src="./assets/images/project-screens/Password Generator.png"
+                    class="project-image img-fluid"
+                    alt="Fancy Password Generator screenshot"
+                  />
+                  <div>
+                    <div class="quaternary-overlay">
+                      <div class="quaternary-text-heading">
+                        <h6>Password Generator</h6>
+                        <div class="quaternary-overlay-text">
+                          An app that takes user input through prompts and
+                          generates a secure password.
+                          <br /><b>Skills:</b> HTML, CSS. GitHub, JavaScript.
+                        </div>
+                        <div class="quaternary-buttons">
+                          <a
+                            class="visit-page-btn"
+                            href="https://nonebula.github.io/fancy-magic-password-generator/"
+                          >
+                            Visit Page
+                          </a>
+                          <a
+                            class="visit-repo-btn"
+                            href="https://github.com/nonebula/fancy-magic-password-generator"
+                          >
+                            Visit Repo
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 12 -->
+              <div class="col-md-3 col-lg-3 mb-2">
+                <div class="quaternary-project project quaternary-content">
+                  <img
+                    src="./assets/images/project-screens/M4 Challenge.png"
+                    class="project-image img-fluid"
+                    alt="console.log Finances Calculations screenshot"
+                  />
+                  <div>
+                    <div class="quaternary-overlay">
+                      <div class="quaternary-text-heading">
+                        <h6>M4 Challenge</h6>
+                        <div class="quaternary-overlay-text">
+                          A javascript analysis of some finances using
+                          console.log to solve equations.
+                          <br /><b>Skills:</b> Javascript, GitHub.
+                        </div>
+                        <div class="quaternary-buttons">
+                          <a
+                            class="visit-page-btn"
+                            href="https://nonebula.github.io/Console-Finances/"
+                          >
+                            Visit Page
+                          </a>
+                          <a
+                            class="visit-repo-btn"
+                            href="https://github.com/nonebula/Console-Finances"
+                          >
+                            Visit Repo
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 13 -->
+              <div class="col-md-3 col-lg-3 mb-2">
+                <div class="quaternary-project project quaternary-content">
+                  <img
+                    src="./assets/images/project-screens/bootstrap-portfolio.png"
+                    class="project-image img-fluid"
+                    alt="Bootstrap Portfolio screenshot"
+                  />
+                  <div>
+                    <div class="quaternary-overlay">
+                      <div class="quaternary-text-heading">
+                        <h6>Bootstrap Portfolio</h6>
+                        <div class="quaternary-overlay-text">
+                          My first boostrap portfolio page.<br /><b>Skills:</b>
+                          HTML, CSS. Bootstrap, GitHub.
+                        </div>
+                        <div class="quaternary-buttons">
+                          <a
+                            class="visit-page-btn"
+                            href="https://nonebula.github.io/Bootstrap-Portfolio/"
+                          >
+                            Visit Page
+                          </a>
+                          <a
+                            class="visit-repo-btn"
+                            href="https://github.com/nonebula/Bootstrap-Portfolio"
+                          >
+                            Visit Repo
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Project 14 -->
+              <div class="col-md-3 col-lg-3 mb-2">
+                <div class="quaternary-project project quaternary-content">
+                  <img
+                    src="./assets/images/project-screens/first-portfolio.png"
+                    class="project-image img-fluid"
+                    alt="First Portfolio screenshot"
+                  />
+                  <div>
+                    <div class="quaternary-overlay">
+                      <div class="quaternary-text-heading">
+                        <h6>First Portfolio</h6>
+                        <div class="quaternary-overlay-text">
+                          My first portfolio page. <br /><b>Skills:</b> HTML,
+                          CSS. GitHub.
+                        </div>
+                        <div class="quaternary-buttons">
+                          <a
+                            class="visit-page-btn"
+                            href="https://nonebula.github.io/joe-higgs-portfolio/"
+                          >
+                            Visit Page
+                          </a>
+                          <a
+                            class="visit-repo-btn"
+                            href="https://github.com/nonebula/joe-higgs-portfolio"
+                          >
+                            Visit Repo
+                          </a>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -797,18 +899,34 @@
 
     <!-- Contact Section -->
     <section class="page-section" id="contact">
-      <h2>Contact Me</h2>
-      <div class="contact-item">
-        <i class="fas fa-phone"></i>
-        <a href="tel:+447753911825">07753911825</a>
-        <i class="fas fa-envelope"></i>
-        <a href="mailto:joe.higgs@live.com">joe.higgs@live.com</a>
-        <i class="fab fa-linkedin"></i>
-        <a href="https://www.linkedin.com/in/joelloydhiggs/">LinkedIn</a>
-        <i class="fab fa-github"></i>
-        <a href="https://github.com/nonebula">GitHub</a>
-        <i class="fab fa-twitter"></i>
-        <a href="https://twitter.com/no_nebula_8421">Twitter</a>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-md-3">
+            <h2>Contact Me</h2>
+          </div>
+          <div class="row text-center contact-item">
+            <div class="col-md-6 col-lg-4 mb-4">
+              <i class="fas fa-phone"></i>
+              <a href="tel:+447753911825">07753911825</a>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <i class="fas fa-envelope"></i>
+              <a href="mailto:joe.higgs@live.com">joe.higgs@live.com</a>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <i class="fab fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/joelloydhiggs/">LinkedIn</a>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <i class="fab fa-github"></i>
+              <a href="https://github.com/nonebula">GitHub</a>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-4">
+              <i class="fab fa-twitter"></i>
+              <a href="https://twitter.com/no_nebula_8421">Twitter</a>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
