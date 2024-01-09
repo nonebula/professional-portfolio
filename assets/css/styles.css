@@ -222,11 +222,11 @@ body {
 }
 
 .skill-container {
-  display: flex;
+  /* display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
 .skill-logo {
@@ -352,10 +352,10 @@ body {
   align-items: center;
 }
 
-.flex-row {
+/* .flex-row {
   display: flex;
   justify-content: center;
-}
+} */
 
 /* Project Button Styles */
 .visit-page-btn:hover {
