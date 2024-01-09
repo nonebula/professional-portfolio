@@ -168,20 +168,11 @@ nav {
 }
 
 /* Jumbotron */
-.myjumbo {
+.myhero {
+  background-color: var(--jumbo-bg-color);
+  height: 400px;
   min-width: 500px;
   max-height: 500px;
-  font-size: 24px;
-}
-
-.myhero {
-  background-color: var(--jumbo-bg-color) !important;
-  height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-wrap: wrap;
 }
 
 .jumboButton {
@@ -194,10 +185,6 @@ nav {
   border-color: var(--jumbo-btn-hover-border);
 }
 
-.tagline {
-  text-align: center;
-}
-
 /* Main Body Text Formatting */
 body {
   background-color: var(--base-color);
@@ -208,7 +195,7 @@ body {
   line-height: 1.5;
 }
 
-p {
+#about p {
   padding: 10px;
   padding-top: 10px;
   margin: 10px;
