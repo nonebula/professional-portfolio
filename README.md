@@ -21,7 +21,7 @@ The goal of this project is to deliver a high-quality one-page website for mysel
 This project is a website hosted on GitHub. To access and use the website, follow these steps:
 
 1. **Open your web browser:** Launch your preferred web browser.
-2. **Visit the project repository:** **https://github.com/nonebula/joe-higgs-portfolio**
+2. **Visit the project repository:** **https://github.com/nonebula/professional-portfolio**
 3. **Navigate to the website:** Click the link to the website in the readme or via the repository.
 4. **Explore the website:** Enjoy exploring and interacting with the website.
 
@@ -29,13 +29,11 @@ If you encounter any issues or have questions, please refer to the documentation
 
 ## Usage 
 
-To navigate to each section on the webpage, click the heading link at the top of the page. Alternatively, you can scroll through the page to read it all! The screenshot below shows the page screenshot. Should the page fail to load in the presented format, make sure to load it up on a desktop monitor. 
-
-![Website Screenshot](/assets/screenshots/scrnli_30_10_2023_16-43-30.png)
+To navigate to each section on the webpage, click the heading link at the top of the page. Alternatively, you can scroll through the page to read it all! Overlay effects are in place throughout the website with buttons to Github Repos and live projects.
 
 ## Credits
 
-The project was completed independently but built off the source code from: edX Boot Camps LLC. I worked with my tutor, Mila Hose, to identify issues and to format my code effectively. We also discussed how effective use of flexboxes has made my work more efficient.
+The project was completed independently but built off the source code from edX Boot Camps LLC. I worked with my tutor, Mila Hose, to identify issues and format my code effectively. We also discussed how effective use of flexboxes has made my work more efficient.
 
 In producing this webpage, I utilized a range of tutorials from W3 Schools and referred to several posts on Stack Overflow.
 
