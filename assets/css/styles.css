@@ -647,3 +647,14 @@ footer {
   width: 100%;
   text-align: center;
 }
+
+
+/* Media Queries */
+@media (max-width: 992px) {
+  .col-lg-4,
+  .col-md-6,
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
